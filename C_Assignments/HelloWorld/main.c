@@ -6,6 +6,7 @@ Licensed under MIT License
 */
 
 #include <stdio.h>
+
 int main()
 {
     printf("Hello world\n");
