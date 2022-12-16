@@ -1,9 +1,3 @@
-/*
-Copyright (c) 2022 Anirban Sinha
-
-Licensed under MIT license
-*/
-
 #include<stdio.h>
 #include<string.h>
 #include<stdbool.h>
