@@ -2,8 +2,11 @@
 Copyright (c) 2022 Anirban Sinha
 Licensed under MIT license
 */
+
+//This program is to print the nth fibonacci number using recursion
 #include <stdio.h>
 
+//Recursive function
 int fib(int n)
 {
     
@@ -21,6 +24,7 @@ int main()
 {
     int n;
     int fib(int n);
+    //User input of the number if terms in the Fibonacci series
     printf("Enter the value of n \n");
     scanf("%d",&n);
     printf("The nth fiboncacci number is %d \n",fib(n));
