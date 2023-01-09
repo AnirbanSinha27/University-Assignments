@@ -3,23 +3,30 @@ Copyright (c) 2022 Anirban Sinha
 Licensed under MIT license
 */
 
+//This program is for reversing a string without using the string.h header file
 #include <stdio.h>
-int fact(int n)
-{
-    int a=1;
-    while(n>0){
-        a*=n;
-        n--;
-    }
-    return a;
-}
 
 int main()
 {
-    int n,f;
-    printf("Enter the number \n");
-    scanf("%d", &n);
-    f=fact(n);
-    printf("The factorial is %d \n", f);
+    char a[10],r[10];
+    int counter=0;
+
+    //User input of the string
+    printf("Enter the string \n");
+    gets(a);
+
+    //Identifying the length of the string
+    for(int i=0;a[i]!='\0';i++){
+        counter++;
+    }
+    
+    for(int i=0;i<=counter;i++){
+        r[i]=a[counter-i-1];
+    }
+    r[counter]='\0';
+
+    //Printing the reversed string
+    printf("The reversed string is %s \n",r);
+
     return 0;
 }
